@@ -1,11 +1,13 @@
 # Ignore Everything
 *
-
 # But not .cpp
 !*.cpp
+!*.c
 # Or directories
 !*/
 !.gitignore
 
 # Or md files
 !*.md
+
+*tempCodeRunnerFile.cpp
