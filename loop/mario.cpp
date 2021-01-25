@@ -4,10 +4,19 @@
 int main(){
     int repeat,stars, space;
 
-    printf("Height: ");
-    scanf("%d", &repeat);
+    
+    while(1)
+    {
+        printf("Height: ");
+        scanf("%d", &repeat);
 
-    // repeat = get_int("Height: ");
+        // repeat = get_int("Height: ");
+
+        if (repeat >= 1 && repeat <= 8)
+        {
+            break;
+        }
+    }
 
     int i;
     for( i=1; i<=repeat; i=i+1 ){
