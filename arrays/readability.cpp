@@ -11,9 +11,10 @@ int main()
     int ln = strlen(text);
 
     int i, grade;
-    float lcount=0, wcount=1, scount=0, L, S;
+    float lcount = 0, wcount = 1, scount = 0, L, S;
 
-    for (i = 0; i < ln; i = i + 1){
+    for (i = 0; i < ln; i = i + 1)
+    {
         if (isalpha(text[i]))
         {
             lcount = lcount + 1;
@@ -34,11 +35,25 @@ int main()
     // printf("%d word(s)\n", wcount);
     // printf("%d sentence(s)\n", scount);
 
-    L = round((lcount * 100) / wcount);
-    S = round((scount * 100) / wcount);
+    L = (lcount * 100) / wcount;
+    S = (scount * 100) / wcount;
 
-    grade = 0.0588 * L - 0.296 * S - 15.8;
+    grade = round(0.0588 * L - 0.296 * S - 15.8);
 
-    printf("Grade %d\n", grade);
+    if (grade < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+
+    if (grade >= 16)
+    {
+        printf("Grade 16+\n");
+    }
+
+    if (grade >= 1 && grade < 16)
+    {
+        printf("Grade %d\n", grade);
+    }
+
 
 }
