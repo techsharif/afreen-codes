@@ -4,6 +4,7 @@
 !*.cpp
 !*.c
 !*.py
+!*.sql
 # Or directories
 !*/
 !.gitignore
