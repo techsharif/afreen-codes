@@ -5,6 +5,8 @@
 !*.c
 !*.py
 !*.sql
+!*.html
+!*.txt
 # Or directories
 !*/
 !.gitignore
