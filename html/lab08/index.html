@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            function checkMC(str){
+                if (str == "five"){
+                    txt = "Correct";
+                    color = "green";
+                }else{
+                    txt = "Incorrect";
+                    color = "red";
+                }
+                document.getElementById("result01").innerHTML = txt;
+                resetColer();
+                document.getElementById(str).style.backgroundColor = color;
+            }
+
+            function checkImp(){
+                str = document.getElementById("inp").value;
+                if (str == "5"){
+                    txt = "Correct";
+                    color = "green";
+                }else{
+                    txt = "Incorrect";
+                    color = "red";
+                }
+                document.getElementById("result02").innerHTML = txt;
+                document.getElementById("inp").style.backgroundColor = color;
+            }
+
+            function resetColer(){
+                document.getElementById("three").style.backgroundColor = "#d9edff";
+                document.getElementById("four").style.backgroundColor = "#d9edff";
+                document.getElementById("five").style.backgroundColor = "#d9edff";
+                document.getElementById("six").style.backgroundColor = "#d9edff";
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>2 + 3 = ?</h3>
+                <h4 id="result01"></h4>
+                <button id="three" onclick="checkMC('three')"> 3 </button>
+                <button id="four" onclick="checkMC('four')"> 4 </button>
+                <button id="five" onclick="checkMC('five')"> 5 </button>
+                <button id="six" onclick="checkMC('six')"> 6 </button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>2 + 3 = ?</h3>
+                <h4 id="result02"></h4>
+                <input type="text" id="inp">
+                <button id="confirm" onclick="checkImp()"> Check Answer </button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
