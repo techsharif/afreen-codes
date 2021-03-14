@@ -7,6 +7,7 @@
 !*.sql
 !*.html
 !*.txt
+!*.css
 # Or directories
 !*/
 !.gitignore

@@ -1,0 +1,24 @@
+.font25 {
+    font-size: 25px;
+}
+
+.colorred {
+    color: red;
+}
+
+.width100ps {
+    width: 100%;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.bordercolorblack {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.backgroundYellow {
+    background-color: yellow;
+}
