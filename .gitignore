@@ -8,6 +8,8 @@
 !*.html
 !*.txt
 !*.css
+!*.py
+!*.db
 # Or directories
 !*/
 !.gitignore
